@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LANKA PC DESIGN</title>
+
+	<!-- font awesome cdn link -->
+	<link rel="stylesheet" href="about1.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+</head>
+
+<style>
+	
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    transition: 2s;
+
+}
+.toggle{
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 120px;
+	height: 60px;
+	border-radius: 50px;
+    transition: 2s;
+}
+
+.toggle i{
+	width: 50%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	z-index: 1;
+}
+
+.toggle .ball{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin: 7.5px;
+    border-radius: 50%;
+    transition: 3s  ease-out;
+}
+
+input{
+    display: none;
+}
+
+
+
+
+
+
+.light{
+	background: #fafafa;
+
+}
+
+.light .toggle{
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6,
+    -3px -3px 4px #ffffff;
+
+}
+
+.light .toggle .bx-sun{
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon{
+    color: #151d2a;
+}
+
+.light .toggle .ball{
+    background: #151d2a;
+}
+
+
+
+
+
+
+
+
+
+.dark{
+	background: #151d2a;
+
+}
+
+.dark .toggle{
+    background: #151d2a;
+    box-shadow: 3px 3px 3px #0e131b,
+    -3px -3px 3px #1c2739;
+
+}
+
+.dark .toggle .bx-sun{
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon{
+    color: #151d2a;
+}
+
+.dark .toggle .ball{
+    background: #fafafa;
+    transform:translateX(60px)
+}
+
+</style>
+<body class="light">
+    <input type="checkbox" id="toggle">
+    <label class="toggle" for="toggle">
+    <i class="bx bx-sun"></i>
+    <i class="bx bxs-moon"></i>
+    <span class="ball"></span>
+
+    </label>
+
+
+<script>
+
+
+    const body = document.querySelector("body");
+    const toggle = document.querySelector("#toggle");
+    const sunIcon = document.querySelector(".toogle .bxs-sun");
+    const moonIcon = document.querySelector(".toggle .bx-moon");
+
+
+    toggle.addEventListener("change",() =>{
+    body.classList.toggle("dark");
+    sunIcon.className=sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
+    moonIcon.className=moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon"
+    });
+
+</script>
+<header>
+
+<a href="#" class="logo"><i class="fa fa-desktop"></i>LANKA PC</a>
+<nav class="navbar">
+	
+    <a href="HOME1.html">home</a>
+	<a href="products055.html">products</a>
+	<a class="active" href="about05.html">about</a>
+	<a href="buildpc05.html">build pc</a>
+	<a href="review05.html">review</a>
+	<a href="order.html">order</a>
+	<a href="login29.html">Login</a>
+</nav>
+
+<div class="icons">
+
+<i class="fas fa-bars" id="menu-bars"></i>
+<i class="fas fa-search" id="search-icon"></i>
+<a href="#" class="fas fa-heart"></a>
+<a href="#" class="fas fa-shopping-cart"></a>
+
+</div>
+
+</header>
+
+
+<form action=""id="search-form">
+	<input type="search"placeholder="search here..." name="" id="search-box">
+	<label for="search-box" class="fas fa-search"></label>
+	<i class="fas fa-times" id="close"></i>
+</form>
+
+
+
+<!--product about start-->
+<section class="about" id="about05" >
+	<h3 class="sub-heading" > about us</h3>
+	<h1 class="heading" > Why choose us?</h1>
+
+	<div class="row" >
+		<div class="image" >
+			<img src="images\about1.jpg" alt="">
+		</div>
+
+<div class="content" >
+	<h3>best product in the country</h3>
+	<p> Welcome to LankaPC, your ultimate resource for building your dream custom PC in Sri Lanka. We are passionate about helping individuals unleash their creativity, maximize performance, and optimize their computing experience. Whether you're a gaming enthusiast, a content creator, or simply someone looking for a reliable and efficient PC, we've got you covered.</p>
+	<p> Get ready to embark on an exciting journey of building your own PC. Let LankaPC be your trusted companion, empowering you to create a customized PC that fulfills all your computing needs. Start exploring our website and unleash the potential of your PC-building aspirations today!</p>
+	<div class="icons-container" >
+		<div class="icons">
+			<i class="fas fa-shipping-fast"></i>
+			<span>free delivery</span>
+		</div>
+		<div class="icons">
+			<i class="fas fa-dollar-sign"></i>
+			<span>easy payment</span>
+		</div>
+		<div class="icons">
+			<i class="fas fa-headset"></i>
+			<span>24/7 service</span>
+		</div>
+	</div>
+	<a href="#" class="btn">learn more</a>
+</div>
+	</div>
+
+	
+
+
+
+
+
+	
+
+
+</section>
+
+
+<section class="footer">
+
+	<div class="box-container">
+	
+	
+	
+	 <div class="box">
+	
+	<h3>locations</h3>
+	<a href="#">Srilanka</a>
+	<a href="#">India</a>
+	<a href="#">USA</a>
+	<a href="#">America</a>
+	<a href="#">Newzland</a>
+	
+	</div>
+	
+	
+	
+	<div class="box">
+	
+		<h3>quick link</h3>
+		<a href="#">home</a>
+		<a href="#">products</a>
+		<a href="#">about</a>
+		<a href="#">build pc</a>
+		<a href="#">order</a>
+		<a href="#">login</a>
+		
+		</div>
+	
+	
+	
+		<div class="box">
+	
+			<h3>contact info</h3>
+			<a href="#">+123-456-7890</a>
+			<a href="#">+373-476-7840</a>
+			<a href="#">+143-756-8890</a>
+			<a href="#">sivasham406@gmail.com</a>
+			<a href="#">kirupa@gmail.com</a>
+			<a href="#">Srilanka,jaffna -40000</a>
+			
+			
+			
+			</div>
+	
+	
+	
+	
+			<div class="box">
+	
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				
+				
+				</div>         
+	
+	</div>
+	
+	
+	<div class="credit">copyright @ 2023 by <span>K.Sivajeevan</span></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	</section>
+
+
+
+
+
+
+
+<script src="script3.js"></script>
+</body>
+</html>
